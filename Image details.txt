@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        td input[type="text"],
+        td input[type="date"],
+        td input[type="tel"],
+        td textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        td input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .form-container {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 style="text-align: center;">Aadhaar/PAN Card Form</h2>
+
+        <form action="#" method="post">
+            <table>
+                <!-- Full Name -->
+                <tr>
+                    <th><label for="full-name">Full Name</label></th>
+                    <td><input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required></td>
+                </tr>
+
+                <!-- Gender -->
+                <tr>
+                    <th><label>Gender</label></th>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+
+                <!-- Date of Birth -->
+                <tr>
+                    <th><label for="dob">Date of Birth</label></th>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+
+                <!-- Aadhaar/PAN Number -->
+                <tr>
+                    <th><label for="id-number">Aadhaar/PAN Number</label></th>
+                    <td><input type="text" id="id-number" name="id-number" placeholder="Enter your Aadhaar/PAN number" maxlength="12" required></td>
+                </tr>
+
+                <!-- Address -->
+                <tr>
+                    <th><label for="address">Address</label></th>
+                    <td><textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea></td>
+                </tr>
+
+                <!-- Mobile Number -->
+                <tr>
+                    <th><label for="mobile">Mobile Number</label></th>
+                    <td><input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required></td>
+                </tr>
+            </table>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit" class="submit-btn">
+        </form>
+    </div>
+
+</body>
+</html>

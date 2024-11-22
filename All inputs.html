@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Input Types Example</title>
+</head>
+<body>
+
+    <h1>All Input Types in HTML</h1>
+
+    <form action="#" method="post">
+
+        <!-- Text input -->
+        <div>
+            <label for="text">Text Input:</label>
+            <input type="text" id="text" name="text" placeholder="Enter text">
+        </div>
+
+        <!-- Email input -->
+        <div>
+            <label for="email">Email Input:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email">
+        </div>
+
+        <!-- Password input -->
+        <div>
+            <label for="password">Password Input:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+        </div>
+
+        <!-- Number input -->
+        <div>
+            <label for="number">Number Input:</label>
+            <input type="number" id="number" name="number" min="1" max="100" value="10">
+        </div>
+
+        <!-- Date input -->
+        <div>
+            <label for="date">Date Input:</label>
+            <input type="date" id="date" name="date" value="2024-11-22">
+        </div>
+
+        <!-- Time input -->
+        <div>
+            <label for="time">Time Input:</label>
+            <input type="time" id="time" name="time" value="14:00">
+        </div>
+
+        <!-- Color input -->
+        <div>
+            <label for="color">Color Input:</label>
+            <input type="color" id="color" name="color" value="#ff0000">
+        </div>
+
+        <!-- File input -->
+        <div>
+            <label for="file">File Input:</label>
+            <input type="file" id="file" name="file">
+        </div>
+
+        <!-- Checkbox input -->
+        <div>
+            <label for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter" checked> Subscribe to Newsletter
+            </label>
+        </div>
+
+        <!-- Radio buttons -->
+        <div>
+            <label>Employee Type:</label><br>
+            <label for="salaried">
+                <input type="radio" id="salaried" name="employee_type" value="salaried" checked> Salaried
+            </label><br>
+            <label for="own-business">
+                <input type="radio" id="own-business" name="employee_type" value="own-business"> Own Business
+            </label>
+        </div>
+
+        <!-- Range input -->
+        <div>
+            <label for="range">Range Input (0-100):</label>
+            <input type="range" id="range" name="range" min="0" max="100" value="50">
+        </div>
+
+        <!-- Hidden input -->
+        <div>
+            <input type="hidden" name="user_id" value="12345">
+        </div>
+
+        <!-- Button input -->
+        <div>
+            <label for="submit">
+                <input type="submit" value="Submit">
+            </label>
+        </div>
+
+    </form>
+
+</body>
+</html>

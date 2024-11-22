@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Default Values</title>
+</head>
+<body>
+
+    <h2>Form with Default Values</h2>
+
+    <form action="#" method="post">
+
+        <!-- Text input with a default value -->
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" value="John Dave" required>
+        </div>
+
+        <!-- Email input with a default value -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="johndave@example.com" required>
+        </div>
+
+        <!-- Password input with a default value -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value="mypassword123" required>
+        </div>
+
+        <!-- Radio buttons with a default value (pre-selected option) -->
+        <div>
+            <label>Employee Type:</label><br>
+            <input type="radio" id="salaried" name="employee_type" value="salaried" checked>
+            <label for="salaried">Salaried</label><br>
+            <input type="radio" id="own-business" name="employee_type" value="own-business">
+            <label for="own-business">Own Business</label>
+        </div>
+
+        <!-- Checkbox with a default checked value -->
+        <div>
+            <label for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter" checked> Subscribe to Newsletter
+            </label>
+        </div>
+
+        <!-- Date input with a default value -->
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" value="1990-01-01">
+        </div>
+
+        <!-- Time input with a default value -->
+        <div>
+            <label for="meeting-time">Preferred Meeting Time:</label>
+            <input type="time" id="meeting-time" name="meeting-time" value="14:00">
+        </div>
+
+        <!-- Number input with a default value -->
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="5" min="1" max="10">
+        </div>
+
+        <!-- Textarea with a default value -->
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50">Please enter your message here...</textarea>
+        </div>
+
+        <!-- Select dropdown with a default value -->
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa" selected>United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+
+        <!-- Submit button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
